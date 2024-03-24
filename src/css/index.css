@@ -1,0 +1,22 @@
+html {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  font-size: 7vw;
+  font-weight: 800;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: transparent;
+  background-image: url("https://64.media.tumblr.com/5f967763f871551a1063c8ff21a553df/19793d7af545a41e-9e/s400x600/f6d11466e34c7f9686adc978ad635bd388f341c8.gifv");
+  background-size: cover;
+  background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-text-stroke: 0.2vw #0e111b;
+}

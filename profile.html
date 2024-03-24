@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <link rel="icon" href="./image/logo.png" />
+    <link rel="stylesheet" href="./src/css/profile.css" />
+    <script type="module" defer src="./src/js/profile.js"></script>
+    <title>SM Entertainment Management</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./image/logo.png" alt="logo" onclick="location.href='./main.html'" />
+        <div class="content" onclick="location.href='./main.html'">
+          <p>SM</p>
+          <p>ENTERTAINMENT</p>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="inner">
+        <div class="container-image">
+          <img src="image/user.png" id="img-value" alt="profile image" />
+          <input type="file" id="imageFile" />
+        </div>
+        <div class="container-contents">
+          <div class="name">
+            <div>name</div>
+            <input type="text" id="name-value" disabled />
+          </div>
+          <div class="group">
+            <div>group</div>
+            <input type="text" id="group-value" disabled />
+          </div>
+          <div class="birthday">
+            <div>birthday</div>
+            <input type="date" id="birthday-value" disabled />
+          </div>
+          <button class="update">수정</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

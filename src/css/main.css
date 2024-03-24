@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "SMTOWN";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/smtown-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SMTOWN";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/smtown-medium.woff") format("woff");
+}
+@font-face {
+  font-family: "SMTOWN";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/smtown-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  --color-black: #121212;
+  --color-pink: #ffb7ca;
+  --color-navy: #223055;
+  --color-gray: #f8f9fa;
+  --color-white: #fff;
+  --color-loding: #dddddd;
+}
+body {
+  background-color: var(--color-gray);
+  color: var(--color-black);
+  font-family: "SMTOWN";
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  outline: none;
+}
+
+nav {
+  margin-bottom: 3rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.logo img {
+  cursor: pointer;
+}
+.logo .content {
+  cursor: pointer;
+}
+.logo .content p {
+  font-weight: 500;
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.btn button {
+  width: 110px;
+  height: 40px;
+  background-color: var(--color-gray);
+  border: 2px solid var(--color-pink);
+  border-radius: 1.5rem;
+  font-family: "SMTOWN";
+  color: var(--color-black);
+  font-weight: 600;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.btn button:hover {
+  border: 2px solid var(--color-navy);
+  color: var(--color-navy);
+}
+.btn .user-add {
+  margin-right: 1rem;
+}
+.btn .user-del {
+  margin-right: auto;
+}
+.btn .user-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-right: 5px;
+}
+.user-search span {
+  margin-left: 10px;
+}
+.user-search input {
+  border-style: none;
+  padding: 10px 10px 10px 10px;
+  background-color: transparent;
+  outline: none;
+  min-width: 12rem;
+}
+
+@media (max-width: 537px) {
+  .btn .user-add {
+    margin-left: auto;
+  }
+  .btn .user-search {
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+}
+
+.container .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
+.container .list a {
+  position: relative;
+  padding: 30px 10px;
+  text-align: center;
+  max-width: 300px;
+  max-height: 410px;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in;
+}
+.container .list a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+.container .list .top {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.container .list .top input {
+  position: absolute;
+  left: 20px;
+}
+.container .list .top img {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+.container .list .bottom {
+  font-weight: 700;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 23px;
+}
+.container .list .bottom .name {
+  font-family: "Noto Sans KR";
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.container .list .bottom .bottom-contents {
+  text-align: left;
+}
+.container .list .bottom div div {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.container .list .bottom .group {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.container .list .bottom .birthday {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: var(--color-loding);
+  background: linear-gradient(130deg, #e5e5e5 34%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load 1.5s infinite;
+}
+@keyframes load {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@media (max-width: 695px) {
+  .container .list a {
+    margin: 0 auto;
+  }
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  height: 350px;
+  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal-body h1 {
+  text-align: center;
+  font-family: "yg-jalnan";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.modal-body .upload-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-body .upload-left {
+  width: 260px;
+  height: 280px;
+  margin-right: 20px;
+}
+.modal-body .upload-left .image-preview {
+  background-image: url(../../image/user.png);
+  background-position: center;
+  background-size: auto;
+  width: 250px;
+  height: 250px;
+}
+.modal-body .upload-right {
+  width: 260px;
+  height: 280px;
+}
+.modal-body .upload-right div {
+  margin-bottom: 10px;
+}
+.modal-body .upload-right input {
+  border: 1px solid #223055;
+  background-color: #f6f7fa;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 85%;
+}
+.modal-body .upload-right .upload-birthday {
+  text-align: center;
+  font-family: "SMTOWN";
+}
+.modal-body .upload-right .upload-btn {
+  width: 80px;
+  height: 40px;
+  background-color: var(--color-gray);
+  border: 2px solid var(--color-pink);
+  border-radius: 1.5rem;
+  font-family: "SMTOWN";
+  color: var(--color-black);
+  font-weight: 600;
+  transition: all 0.6s;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+}
+.modal-body .upload-right .upload-btn:hover {
+  border: 2px solid var(--color-navy);
+  color: var(--color-navy);
+}
+
+@media (max-width: 695px) {
+  .modal-body {
+    width: 260px;
+    height: 650px;
+  }
+  .upload-left {
+    margin-bottom: 20px;
+  }
+}

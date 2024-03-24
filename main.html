@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <link rel="icon" href="./image/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script type="module" defer src="./src/js/main.js"></script>
+    <title>SM Entertainment Management</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./image/logo.png" alt="logo" onclick="location.reload()" />
+        <div class="content" onclick="location.reload()">
+          <p>SM</p>
+          <p>ENTERTAINMENT</p>
+        </div>
+      </div>
+      <div class="btn">
+        <div class="user-add">
+          <button class="user-add-btn">등록</button>
+        </div>
+        <div class="user-del">
+          <button class="user-del-btn">삭제</button>
+        </div>
+        <div class="user-search">
+          <span class="material-symbols-outlined"> search </span>
+          <input class="search" type="search" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="inner">
+        <div class="list"></div>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal-body">
+        <h1>프로필 등록</h1>
+        <div class="upload-body">
+          <div class="upload-left">
+            <div class="image-preview"></div>
+            <input id="image-upload" accept="image/*" type="file" />
+          </div>
+          <div class="upload-right">
+            <div>Name</div>
+            <input class="upload-name" type="text" />
+            <div>Group</div>
+            <input class="upload-group" type="text" />
+            <div>Birthday</div>
+            <input class="upload-birthday" type="date" />
+            <button class="upload-btn">등록</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

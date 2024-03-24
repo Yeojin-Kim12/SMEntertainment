@@ -1,0 +1,14 @@
+{
+  "name": "kdt8-m2",
+  "version": "1.0.0",
+  "description": "직원들을 관리할 수 있는 관리자 서비스",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
